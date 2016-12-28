@@ -1,0 +1,16 @@
+//created on: Dec 28, 2016
+package com.td.rest.rules
+
+import com.td.rest.data.Customer;
+
+rule "Customer 2 Rule"
+
+    when
+        customer : Customer( customerId == "customer2" )
+    then
+    	System.out.println("customer 2 drl");
+    	customer.setCustomerId("");
+        customer.setRole("USER");
+        update(customer);
+
+end

@@ -1,0 +1,4 @@
+com\td\rest\data\Customer.class
+com\td\rest\controller\RuleController.class
+com\td\rest\config\AppConfig.class
+com\td\rest\config\WebConfig.class
